@@ -1,0 +1,105 @@
+/* 通用样式 */
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+  }
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  h1, h2, h3 {
+    font-weight: normal;
+  }
+  
+  /* 头部区域（头像 + 名字 + 联系方式） */
+  header {
+    background-color: #fff;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  header img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  header h1 {
+    margin: 0.5rem 0;
+    font-size: 2rem;
+  }
+  header p {
+    margin: 0.2rem 0;
+    color: #555;
+  }
+  
+  /* 主体内容整体布局 */
+  main {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  /* 每个板块（section）的标题 */
+  section {
+    margin-bottom: 2rem;
+  }
+  section h2 {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  /* 工作经历、教育、获奖、项目等列表的样式 */
+  .item {
+    margin-bottom: 1.5rem;
+  }
+  .item h3 {
+    margin-bottom: 0.2rem;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  .item p {
+    margin-left: 1rem;
+    color: #555;
+  }
+  
+  /* 技能列表 */
+  #skills ul {
+    list-style: disc;
+    padding-left: 2rem;
+    margin-top: 0.5rem;
+  }
+  #skills li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* 响应式：移动设备适配 */
+  @media (max-width: 600px) {
+    main {
+      margin: 1rem;
+    }
+    header {
+      padding: 1.5rem 1rem;
+    }
+    header h1 {
+      font-size: 1.5rem;
+    }
+  }
