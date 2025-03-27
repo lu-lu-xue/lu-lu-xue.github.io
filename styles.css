@@ -70,12 +70,16 @@
   }
 
   .about-container {
-    background-color: #fafafa; /* Light background color */
-    border: 1px solid #ddd;    /* Subtle border */
-    border-radius: 8px;        /* Rounded corners */
-    max-width: 800px;          /* Limit width for a card-like shape */
-    margin: 2rem auto;         /* Center horizontally, add vertical spacing */
-    padding: 2rem; 
+    background-color: #EBF5FB; /* Or choose any color you like */
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* Optionally, if you want a thin line like header's border */
+    /* border-bottom: 1px solid #ddd; */
+    margin: 0;    /* Ensures full-width coverage */
+    width: 100%;
   }
   
   /* 工作经历、教育、获奖、项目等列表的样式 */
