@@ -22,7 +22,9 @@
   
   /* 头部区域（头像 + 名字 + 联系方式） */
   header {
-    background-color: #FCF3CF;
+    background-color: #fcf5d9;
+    width: 100%;
+    margin: auto;
     padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
@@ -65,6 +67,15 @@
     border-bottom: 2px solid #007bff;
     padding-bottom: 0.5rem;
     font-size: 1.5rem;
+  }
+
+  .about-container {
+    background-color: #fafafa; /* Light background color */
+    border: 1px solid #ddd;    /* Subtle border */
+    border-radius: 8px;        /* Rounded corners */
+    max-width: 800px;          /* Limit width for a card-like shape */
+    margin: 2rem auto;         /* Center horizontally, add vertical spacing */
+    padding: 2rem; 
   }
   
   /* 工作经历、教育、获奖、项目等列表的样式 */
