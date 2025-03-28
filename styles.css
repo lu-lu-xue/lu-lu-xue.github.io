@@ -10,12 +10,13 @@
     background-color: #f9f9f9;
   }
   a {
-    color: #007bff;
+    color: #e4e8ec;
     text-decoration: none;
   }
   a:hover {
     text-decoration: underline;
   }
+
   h1, h2, h3 {
     font-weight: normal;
   }
@@ -23,20 +24,15 @@
   /* 头部区域（头像 + 名字 + 联系方式） */
   header {
     background-color: #EBF5FB;
-    width: 100%;
-    margin: auto;
-    padding: 2rem 1rem;
-    display: flex;
-    flex-direction: column;
+    padding: 1rem;
     align-items: center;
     text-align: center;
-    border-bottom: 1px solid #ddd;
   }
   header img {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 10px;
     margin-bottom: 1rem;
   }
   header h1 {
@@ -50,58 +46,18 @@
   
   /* 主体内容整体布局 */
   main {
-    /* max-width: 800px; */
-    margin: 0;
-    max-width: 100%;
-    background-color: #fff;
-    padding: 1.5rem;
+    margin: 1rem;
     border-radius: 0.5rem;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
   }
   
   /* 每个板块（section）的标题 */
   section {
     margin-bottom: 2rem;
-  }
-  section h2 {
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 0.5rem;
-    font-size: 1.5rem;
+    background-color: honeydew;
+    padding: 1rem;
+    border-radius: 0.5rem;
   }
 
-/* 1. Make the section fill the width with a background image. */
-.about-hero {
-  position: relative;           /* So we can position child elements inside. */
-  width: 100%;                  /* Full width */
-  min-height: 400px;            /* Enough height for a big hero look. */
-  background: url('your-bg.jpg') no-repeat center center; /* Replace with your image */
-  background-size: cover;       /* Make the image fill the area */
-  display: flex;                /* So we can center overlay easily */
-  align-items: center;          /* Center overlay vertically */
-  justify-content: center;      /* Center overlay horizontally */
-  /* If you want parallax effect, also add: background-attachment: fixed; */
-}
-
-/* 2. The semi-transparent overlay or container for text. */
-.about-hero .overlay {
-  background-color: rgba(255, 255, 255, 0.8); /* White w/ 80% transparency */
-  padding: 2rem;
-  max-width: 800px;
-  border-radius: 8px;            /* Slight rounding for style */
-  text-align: center;            /* Center text inside */
-}
-
-/* 3. The heading and paragraphs inside. */
-.about-hero h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.about-hero p {
-  font-size: 1rem;
-  line-height: 1.6;
-}
   
   /* 工作经历、教育、获奖、项目等列表的样式 */
   .item {
@@ -115,16 +71,6 @@
   .item p {
     margin-left: 1rem;
     color: #555;
-  }
-  
-  /* 技能列表 */
-  #skills ul {
-    list-style: disc;
-    padding-left: 2rem;
-    margin-top: 0.5rem;
-  }
-  #skills li {
-    margin-bottom: 0.5rem;
   }
   
   /* 响应式：移动设备适配 */
