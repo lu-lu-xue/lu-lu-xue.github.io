@@ -29,8 +29,8 @@
     text-align: center;
   }
   header img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 1rem;
@@ -43,6 +43,10 @@
     margin: 0.2rem 0;
     color: #555;
   }
+
+  header a{
+    color: #555;
+  }
   
   /* 主体内容整体布局 */
   main {
@@ -53,7 +57,7 @@
   /* 每个板块（section）的标题 */
   section {
     margin-bottom: 2rem;
-    background-color: honeydew;
+    background-color: EBF5FB;
     padding: 1rem;
     border-radius: 0.5rem;
   }
@@ -71,6 +75,9 @@
   .item p {
     margin-left: 1rem;
     color: #555;
+  }
+  .item a{
+    color: #1fa4f1
   }
   
   /* 响应式：移动设备适配 */
