@@ -52,6 +52,7 @@
   main {
     /* max-width: 800px; */
     margin: 0;
+    max-width: 100%;
     background-color: #fff;
     padding: 1.5rem;
     border-radius: 0.5rem;
@@ -69,18 +70,38 @@
     font-size: 1.5rem;
   }
 
-  .about-container {
-    background-color: #EBF5FB; /* Or choose any color you like */
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    /* Optionally, if you want a thin line like header's border */
-    /* border-bottom: 1px solid #ddd; */
-    margin: 0;    /* Ensures full-width coverage */
-    width: 100%;
-  }
+/* 1. Make the section fill the width with a background image. */
+.about-hero {
+  position: relative;           /* So we can position child elements inside. */
+  width: 100%;                  /* Full width */
+  min-height: 400px;            /* Enough height for a big hero look. */
+  background: url('your-bg.jpg') no-repeat center center; /* Replace with your image */
+  background-size: cover;       /* Make the image fill the area */
+  display: flex;                /* So we can center overlay easily */
+  align-items: center;          /* Center overlay vertically */
+  justify-content: center;      /* Center overlay horizontally */
+  /* If you want parallax effect, also add: background-attachment: fixed; */
+}
+
+/* 2. The semi-transparent overlay or container for text. */
+.about-hero .overlay {
+  background-color: rgba(255, 255, 255, 0.8); /* White w/ 80% transparency */
+  padding: 2rem;
+  max-width: 800px;
+  border-radius: 8px;            /* Slight rounding for style */
+  text-align: center;            /* Center text inside */
+}
+
+/* 3. The heading and paragraphs inside. */
+.about-hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-hero p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
   
   /* 工作经历、教育、获奖、项目等列表的样式 */
   .item {
